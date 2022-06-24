@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="{{ url_for('static',filename='newstyle.css') }}">
+</head>
+</head>
+
+<body>
+<section>
+    <header id="home">
+    <nav>
+        <div class="logo">E-Shop</div>
+        <div class="menu">
+        <a href="/home1">home</a>
+            <a href="/man">man</a>
+            <a href="/women">women</a>
+             <a href="/team">Team</a>
+             <a href="/contact">contact</a>
+        </div>
+    </nav>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> uttarakhand champawat, india</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 7505950151</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mohit@mail.com</p>
+    <br>
+      <form action="/contact"  target="_blank" method="POST" action="{{url_for('contact')}}">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" name="name" ></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" name="email" ></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Phone" required name="Phone" name="phone"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" name="message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+    </header>
+</section>
+
+            <footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-blue"></i>
+    <i class="fa fa-instagram w3-hover-blue"></i>
+    <i class="fa fa-snapchat w3-hover-blue"></i>
+    <i class="fa fa-pinterest-p w3-hover-blue"></i>
+    <i class="fa fa-twitter w3-hover-blue"></i>
+    <i class="fa fa-linkedin w3-hover-blue"></i>
+  </div>
+</footer>
+</header>
+</body>
+</html>
